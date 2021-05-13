@@ -1,3 +1,5 @@
+<!-- https://david-v-rullo.github.io/Quiz-Game/ -->
+<!-- https://github.com/david-v-rullo./Quiz-Game/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,7 +18,7 @@
       <div class="col-12 bg-gradient text-xl-center">
         <h1>Are you Smarter Than a Lawyer?</h1>
       </div>
-      <button class="bt btn-success btn-large d-grid gap-2 col-4 mx-auto">
+      <button id="start-button" class="bt btn-success btn-large d-grid gap-2 col-4 mx-auto">
         Start
       </button>
     </header>
@@ -30,9 +32,9 @@
             </div>
           </div>
           <div class="card timer">
-            <div class="timer-text">
+            <div id="timer-text">
               <div class="bg-light text-dark">
-                <h3>10 seconds remaining</h3>
+                <h3><span id="timer-counter">15</span> seconds remaining</h3>
               </div>
             </div>
           </div>
@@ -86,7 +88,7 @@
             ><span>Default Answer D</span>
           </label>
         </div>
-        <button type="submit" class="btn btn-success m-2">Check Answer</button>
+        <button type="submit" class="btn btn-success m-2" id="submit-button">Check Answer</button>
       </form>
     </div>
 
