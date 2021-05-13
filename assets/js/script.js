@@ -55,12 +55,14 @@ var wrongAnswer = 0;
 var chosenQuestion = {};
 //Use a function to randomly choose the next question
 //Function to render the question in the box.
+
 function pullQuestion(arr) {
   var random = Math.floor(Math.random() * arr.length);
   var randQuestion = arr[random];
 
   return randQuestion;
 }
+
 function renderQuestion() {
   chosenQuestion = pullQuestion(questions);
   questionText.text(chosenQuestion.question);
@@ -96,5 +98,6 @@ function handleAnswerSubmit(event) {
   localStorage.setItem("Correct", correctAnswer);
   localStorage.setItem("Wrong", wrongAnswer);
 }
+
 renderQuestion();
 submitButton.on("submit", handleAnswerSubmit);
