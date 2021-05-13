@@ -12,58 +12,83 @@
     <title>Quiz Game</title>
   </head>
   <body class="bg-dark text-light">
-    <div id="#root"><h1>Are you Smarter than a Lawyer?</h1></div>
-    <form class="question-card">
-      <h2 id="question-text">Question Text</h2>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="answer-A"
-        />
-        <label class="form-check-label" for="answer-A">
-          Default Answer 1
-        </label>
+    <header class="p-4 mx-auto">
+      <div class="col-12 bg-gradient text-xl-center">
+        <h1>Are you Smarter Than a Lawyer?</h1>
       </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="answer-B"
-          checked
-        />
-        <label class="form-check-label" for="answer-B">
-          Default Answer 2
-        </label>
+      <button class="bt btn-success btn-large d-grid gap-2 col-4 mx-auto">
+        Start
+      </button>
+    </header>
+    <div class="row">
+      <div class="bg-dark text-light col-md-4 p-4">
+        <div>
+          <div class="">
+            <div>
+              <h2>Correct: <span class="win">0 </span></h2>
+              <h2>Incorrect: <span class="lose">0</span></h2>
+            </div>
+          </div>
+          <div class="card timer">
+            <div class="timer-text">
+              <div class="bg-light text-dark">
+                <h3>10 seconds remaining</h3>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="answer-C"
-          checked
-        />
-        <label class="form-check-label" for="answer-C">
-          Default Answer 3
-        </label>
+      <div class="bg-light text-dark col-md-4 p-2">
+        <h2 id="question-text">Question Text</h2>
       </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          name="flexRadioDefault"
-          id="answer-D"
-          checked
-        />
-        <label class="form-check-label" for="answer-D"
-          ><span>Default Answer D</span>
-        </label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit Answer</button>
-    </form>
+      <form class="col-md-4 p-2 question-card">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="answer-A"
+          />
+          <label class="form-check-label" for="answer-A">
+            Default Answer 1
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="answer-B"
+          />
+          <label class="form-check-label" for="answer-B">
+            Default Answer 2
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="answer-C"
+          />
+          <label class="form-check-label" for="answer-C">
+            Default Answer 3
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="answer-D"
+          />
+          <label class="form-check-label" for="answer-D"
+            ><span>Default Answer D</span>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success m-2">Check Answer</button>
+      </form>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script
