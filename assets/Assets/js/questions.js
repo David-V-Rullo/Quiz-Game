@@ -1,6 +1,6 @@
-var questions = [
+export const questions = [
   {
-    questionOne:
+    question:
       "What amendment to the Constitution protects the freedom of speech?",
     answers: [
       { text: "14th", correct: false },
@@ -9,7 +9,7 @@ var questions = [
       { text: "1st", correct: true },
     ],
   },
-  {questionTwo:
+  {question:
       "What element of a crime reflects an individual's state of mind?",
     answers: [
       { text: "Res Judicata", correct: false },
@@ -18,7 +18,7 @@ var questions = [
       { text: "Fault", correct: false },
     ],
   },
-  {questionThree:
+  {question:
       "Which of the following is not required to form a contract under the UCC",
     answers: [
       { text: "A price", correct: true },
@@ -27,7 +27,7 @@ var questions = [
       { text: "An Offer", correct: false },
     ]
 },
-  {questionFour:
+  {question:
       "What year did the U.S. ratify it's current Constitution?",
     answers: [
       { text: "1789", correct: true },
@@ -36,7 +36,7 @@ var questions = [
       { text: "1781", correct: false },
     ]
 },
-  {questionFive:
+  {question:
     "What amendment to the Constitution grants the right to a jury trial",
     answers: [
       { text: "5th", correct: false },

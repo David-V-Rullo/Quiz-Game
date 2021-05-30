@@ -11,12 +11,12 @@
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="/Assets/css/style.css" rel="stylesheet" />
     <title>Quiz Game</title>
   </head>
   <body class="bg-dark text-light">
     <header class="p-4 mx-auto">
-      <div class="col-12 bg-gradient text-xl-center">
+      <div class="col-12 bg-gradient text-xl-center" id="page-title-jumbo">
         <h1>Are you Smarter Than a Lawyer?</h1>
       </div>
       <button
@@ -37,18 +37,18 @@
               class="card timer col-md-6 bg-light text-dark"
               id="timer-display"
             >
-              <h3 id="timer-counter">15</h3>
+              <h3 id="timer-counter">75</h3>
               <p>Seconds Remaining</p>
             </div>
           </div>
         </div>
-        <div id="question-card" class="col-md-6 bg-light text-dark">
-          <h1>Question</h1>
+        <div id="question-card" class="col-md-6 bg-light text-dark ">
+          <h1 id=question-text>Question</h1>
           <div id="answer-buttons" class="btn-grid col-md-6">
-            <button class="btn">Answer 1 This is a test </button>
-            <button class="btn">Answer 2 This is a test</button>
-            <button class="btn">Answer 3 this is a test</button>
-            <button class="btn">Answer 4 this is a test</button>
+            <button class="btn" id="answer-button">Answer 1 This is a test</button>
+            <button class="btn" id="answer-button">Answer 2 This is a test</button>
+            <button class="btn" id="answer-button">Answer 3 this is a test</button>
+            <button class="btn" id="answer-button">Answer 4 this is a test</button>
           </div>
         </div>
       </div>
@@ -59,6 +59,6 @@
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="/Assets/js/script.js"></script>
   </body>
 </html>
