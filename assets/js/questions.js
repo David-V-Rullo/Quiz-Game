@@ -1,4 +1,4 @@
-export const questions = [
+var questions = [
   {
     question:
       "What amendment to the Constitution protects the freedom of speech?",

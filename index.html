@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Timed Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark text-light mx-auto">
+  <div class="container">
+  <div class="row">
+  <div class="bg-dark text-light">
+    <header class="bg-light text-dark rounded-2">
+        <div class="scores">
+            <a id="highscores-link" class="btn btn-outline-success text-dark m-1">Click here to view high scores</a></h4>
+        </div>
+        <button id="timer" class="timer btn btn-success m-1">
+            Time: 75
+        </button>
+    </header>
+
+    <section id="start-container" class="start-quiz">
+        <h1>Are you Smarter Than a Lawyer</h1>
+        <p>
+            You have 75 seconds to try to get the highest score by answering five
+            Legal questions. Be careful, they are not easy. Incorrect answers will penalize your
+            time by ten seconds. Your total score will be your time after you
+            answer the last question. Click start when you are ready.
+        </p>
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn-success">Start Quiz</button>
+        </div>
+    </section>
+
+    <section id="question-container" class="hide">
+        <h1 id="question">Question</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Answer 1</button>
+            <button class="btn">Answer 2</button>
+            <button class="btn">Answer 3</button>
+            <button class="btn">Answer 4</button>
+        </div>
+        <h2 id="check-answer" class="correct-wrong hide text-light"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide btn-success">Next</button>
+        </div>
+    </section>
+
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn btn-success">Submit</button>
+        </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
+  </div>
+  </div>
+  </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
